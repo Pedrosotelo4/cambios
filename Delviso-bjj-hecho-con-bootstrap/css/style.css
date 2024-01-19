@@ -1,0 +1,70 @@
+.menu {
+  justify-content: flex-end;
+  background-color: darkgray;
+  border-radius: 10px;
+}
+
+.foto-profes {
+  border: 2px solid rgb(42, 42, 42);
+  width: 150px;
+  padding: 0px;
+  margin: 0px;
+  border-radius: 10px;
+}
+
+.foto-equipo {
+  width: 1340px;
+  height: 750px;
+  margin: 0px;
+  padding: 0px;
+  border-radius: 10px;
+}
+
+.foto-horarios {
+  width: 1340px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.texto-redes {
+  font-size: 35px;
+  color: white;
+}
+.cinturones{
+  width: 1340px;
+  height: 500px;
+}
+.origen-bjj{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+@media screen and (max-width:320px) {
+  .foto-equipo{
+      width: 250px;
+      height: 200px;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .foto-horarios{
+      width: 250px;
+    }
+  }
+  @media screen and (max-width:320px) {
+    .cinturones{
+        width: 200px;
+      height: 200px;}
+      }
+      @media screen and (max-width:320px) {
+        .mapa{
+            width: 200px;
+            height: 300px;}
+        }
+        @media screen and (max-width:320px) {
+          .foto-profes{
+              width: 130px;
+              height: 130px;
+          }
+          
+      }
+/*# sourceMappingURL=style.css.map */

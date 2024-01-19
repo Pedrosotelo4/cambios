@@ -1,0 +1,83 @@
+.menu{
+    justify-content: flex-end;
+background-color: darkgray; 
+  border-radius: 10px;
+ }
+
+@mixin crearBordes(){
+    border: 2px solid rgb(42, 42, 42);
+    width: 150px;
+    padding: 0px;
+    margin: 0px;  
+}
+.foto-profes{
+    @include crearBordes();
+    border-radius: 10px;
+}
+
+@mixin Equipo(){
+    width: 1340px;
+    height: 750px;
+    margin: 0px;
+    padding: 0px;
+}
+.foto-equipo{
+    @include Equipo;
+    border-radius: 10px;
+}
+$estilos:(
+    tamaño:1340px,
+    color:white,
+    ancho:500px,
+    tFuente: 35px,
+    centro:center,
+    bordes:10px,
+
+);
+
+.foto-horarios{
+width: map-get($map: $estilos, $key:tamaño );
+height: map-get($map: $estilos, $key:ancho );
+border-radius: map-get($map: $estilos, $key:bordes );
+}
+.texto-redes{
+    font-size: map-get($map: $estilos, $key:tFuente );
+    color: map-get($map: $estilos, $key:color );
+}
+.cinturones{
+    width: 1340px;
+    height: 500px;
+  }
+  .origen-bjj{
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  @media screen and (max-width:320px) {
+    .foto-equipo{
+        width: 320px;
+        height: 200px;
+    }
+  }
+  
+  @media screen and (max-width:320px) {
+    .foto-horarios{
+        width: 320px;
+      }
+    }
+    @media screen and (max-width:320px) {
+      .cinturones{
+          width: 320px;
+        height: 200px;}
+        }
+        @media screen and (max-width:320px) {
+          .mapa{
+              width: 320px;
+              height: 300px;}
+          }
+          @media screen and (max-width:320px) {
+            .foto-profes{
+                width: 130px;
+                height: 130px;
+            }
+            
+        }
